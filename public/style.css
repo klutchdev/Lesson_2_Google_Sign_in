@@ -1,0 +1,98 @@
+:root {
+  --bg-primary: #262626;
+  --bg-card: #363636;
+
+  --divider: #666666;
+
+  --border-radius: 0.5rem;
+
+  --primary-font: sans-serif;
+}
+
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-family: var(--primary-font);
+  background-color: var(--bg-primary);
+}
+
+
+section {
+  margin: auto;
+  padding: 0.5rem;
+}
+
+hr {
+  color: var(--divider);
+}
+
+
+
+.card {
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+}
+
+
+.btn {
+  border-radius: 0;
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.profile-img {
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+
+.firebase-logo {
+  width: 150px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+
+.signed-out {
+  margin-top: 25vh;
+}
+
+
+
+/*√ ------------/ MEDIA QUERIES /------------ */
+
+@media screen and (max-width: 767px) {
+
+  section {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  section {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  section {
+    width: 50%;
+  }
+}
